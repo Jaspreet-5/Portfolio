@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Jaspreet Singh</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body class="bg-[#0D1117] text-sm text-white flex flex-col justify-center">
+
+
+
+    <!-- Navbar starts -->
+
+
+
+    <nav class="flex gap-6 h-17 bg-gray-900 justify-center items-center">
+
+
+        <div class="flex gap-2 items-center">
+            <div class="text-lg">Jaspreet</div>
+            <div>/</div>
+            <span>Backend Developer</span>
+        </div>
+
+        <ul class="links hidden md:flex text-gray-400 gap-7 ">
+
+            <li><a href="">About</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Experience</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="https://github.com/Jaspreet-5" target="_blank">
+                    <img class="rounded-3xl"
+                        src="https://img.icons8.com/external-tal-revivo-bold-tal-revivo/1200/external-github-with-cat-logo-an-online-community-for-software-development-logo-bold-tal-revivo.jpg"
+                        alt="Github" width="24px">
+                </a></li>
+
+        </ul>
+
+    </nav>
+
+
+
+    <!-- Main Body Start -->
+
+
+
+    <main class="w-[90vw] md:w-[70vw] flex flex-col justify-center self-center">
+
+        <section class="mt-18 flex flex-col gap-6 font-bold">
+
+            <div>
+
+                <h2 class="text-[#2563EB] text-[11px] md:text-[14px] border rounded-4xl w-fit px-2 py-0.5 my-4">
+                    Available for consulting &
+                    backend roles</h2>
+
+                <div class="text-[clamp(1.3rem,3vw,2.2rem)]">
+                    Hi, I'm Jaspreet Singh.
+                </div>
+                <p class="text-[clamp(1.2rem,3.0vw,2rem)]">
+                    I build reliable backend services , scalable APIs, with Scalable Architecture.
+                </p>
+
+            </div>
+
+            <div>
+
+                <p class="text-gray-400 text-[clamp(0.780rem,1.4vw,1.20rem)]">
+                    I’m a software engineer specializing in Backend Engineering. I focus on writing clear, predictable
+                    code that scales reliably under heavy real-world traffic with low latency and clean operational
+                    ergonomics.
+                </p>
+
+            </div>
+
+            <div class="flex gap-6 mt-3">
+
+                <button class="px-5 py-2 bg-[#2563EB] rounded-lg cursor-pointer">Get in Touch </button>
+
+                <a href="https://github.com/Jaspreet-5" target="_blank">
+
+                    <button class="px-5 py-2 rounded-lg bg-[#1d1e21] flex gap-2 cursor-pointer">
+                        Github
+                        <img class="rounded-3xl"
+                            src="https://img.icons8.com/external-tal-revivo-bold-tal-revivo/1200/external-github-with-cat-logo-an-online-community-for-software-development-logo-bold-tal-revivo.jpg"
+                            alt="Github" width="22px">
+                    </button>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <div class="divisor w-full bg-gray-700 h-0.5 mt-20"></div>
+
+
+
+        <!-- Core Technologies -->
+
+
+
+        <section class="flex flex-col">
+
+            <h1 class="my-6 text-[clamp(1.5rem,4vw,2.5rem)] font-bold">Core Technologies</h1>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+
+                <div class="rounded-lg bg-gray-900 p-4">
+
+                    <h3 class="text-[#2563EB] text-lg mb-2">Languages</h3>
+                    <p>C , C++ , Python , JavaScript , TypeScript</p>
+
+                </div>
+
+
+                <div class="rounded-lg bg-gray-900 p-4">
+
+                    <h3 class="text-[#2563EB] text-lg mb-2">Databases</h3>
+                    <p>MySQL , PostgreSQL , MongoDB , Redis</p>
+
+                </div>
+
+
+                <div class="rounded-lg bg-gray-900 p-4">
+
+                    <h3 class="text-[#2563EB] text-lg mb-2">Tools</h3>
+                    <p>Git , GitHub , Linux , Docker</p>
+
+                </div>
+
+
+                <div class="rounded-lg bg-gray-900 p-4">
+
+                    <h3 class="text-[#2563EB] text-lg mb-2">Frameworks</h3>
+                    <p>React , Next.js , Node.js , Express</p>
+
+                </div>
+
+
+            </div>
+        </section>
+
+
+
+        <div class="divisor w-full bg-gray-700 h-0.5 mt-20"></div>
+
+
+
+
+        <!-- Projects Section -->
+
+
+
+        <section class="flex flex-col gap-6 items-center"">
+
+            <h1 class="my-6 text-[clamp(1.5rem,4vw,2.5rem)] font-bold ">Projects</h1>
+
+            <div id="projectsContainer" class="flex flex-col gap-10">
+
+                <script>
+
+                    const projects = ["projects/ecommerce.html", "projects/url-shortner.html"]
+
+                    Promise.all(projects.map((project) =>
+                        fetch(project)
+
+                            .then(response => response.text())
+
+                            .catch(err => {
+                                console.error("Error Loading Project : ", err)
+                                return "";
+                            })
+                    ))
+                        .then((pages) => {
+                            pages.forEach((project) => {
+                                document.getElementById("projectsContainer").insertAdjacentHTML("beforeend", project)
+                            })
+                        })
+                        .catch(err => {
+                            console.error("Error Loading the Projects ", err);
+                        })
+                </script>
+
+            </div>
+
+            <div class="mt-6">
+                
+                <a href="" class="text-[#2563EB] px-6 py-3 border-2 rounded-4xl font-bold hover:border-[#2563EB] hover:text-white hover:bg-[#2563EB]">
+                    View All Projects
+                </a>
+
+            </div>
+
+        </section>
+
+
+        
+        <div class="divisor w-full bg-gray-700 h-0.5 mt-20"></div>
+
+
+
+
+                    <!-- Next Compo -->
+
+
+
+
+        <section>
+            
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
