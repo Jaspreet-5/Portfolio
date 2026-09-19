@@ -1,5 +1,5 @@
 <aside
-    class="text-[clamp(0.875rem,1vw,1.25rem)] rounded-2xl bg-gray-900 overflow-auto scrollbar-none [&::-webkit-scrollbar]:hidden">
+    class="project text-[clamp(0.875rem,1vw,1.25rem)] rounded-2xl bg-gray-900 overflow-auto scrollbar-none [&::-webkit-scrollbar]:hidden">
 
     <div class=" flex flex-col gap-3 p-3 ">
 
@@ -10,7 +10,7 @@
             workflows.
         </p>
 
-        <ul class="list-disc ml-4.5 text-[#C3C6CF] font-bold">
+        <ul class=" hidden details list-disc ml-4.5 text-[#C3C6CF] font-bold">
             <li>JWT Access + Refresh Tokens</li>
             <li>Role-Based Access Control (RBAC)</li>
             <li>Admin & User Routes</li>
@@ -23,12 +23,16 @@
 
     <div class=" m-6">
 
-        <div class="links flex h-full ">
+        <div class="links flex h-full gap-8">
+
+            <button onclick="toggleProjectDetails(this)" class="inline rounded-lg px-4 py-2 font-bold bg-[#046e94] cursor-pointer">View More...</button>
 
             <a href="https://github.com/Jaspreet-5/e-commerce" target="_blank" rel="noopener noreferrer"
-                class="flex items-center gap-2 font-bold justify-center px-4 py-2 rounded-lg bg-[#121213] cursor-pointer">
+                class="flex items-center gap-2 font-bold justify-center px-4 py-1.5 rounded-lg bg-[#121213] cursor-pointer">
                 View Code...
-                <img class="rounded-3xl" src="https://img.icons8.com/external-tal-revivo-bold-tal-revivo/1200/external-github-with-cat-logo-an-online-community-for-software-development-logo-bold-tal-revivo.jpg" alt="GitHub" width="22" height="22">
+                <img class="rounded-3xl"
+                    src="https://img.icons8.com/external-tal-revivo-bold-tal-revivo/1200/external-github-with-cat-logo-an-online-community-for-software-development-logo-bold-tal-revivo.jpg"
+                    alt="GitHub" width="22" height="22">
             </a>
         </div>
     </div>

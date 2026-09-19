@@ -18,25 +18,28 @@
 
 
 
-    <nav class="flex gap-6 h-17 bg-gray-900 justify-center items-center">
+    <nav class="navbar flex gap-6 h-17 bg-gray-900 justify-between items-center px-5">
 
 
         <div class="flex gap-2 items-center">
-            <div class="text-lg">Jaspreet</div>
+            <div class="font-bold">Jaspreet</div>
             <div>/</div>
-            <span>Backend Developer</span>
+            <span>Backend Dev.</span>
         </div>
 
-        <ul class="links hidden md:flex text-gray-400 gap-7 ">
+        <div onclick="toggleNavbarLinks(this)" class="md:hidden">
+            <img class="menu-bar" src="./Assets/menu-bar.svg" width="34" alt="">
+        </div>
+
+        <ul class="links hidden md:flex md:justify-center md:items-center text-gray-400 gap-7 ">
 
             <li><a href="">About</a></li>
             <li><a href="">Projects</a></li>
             <li><a href="">Experience</a></li>
             <li><a href="">Contact</a></li>
             <li><a href="https://github.com/Jaspreet-5" target="_blank">
-                    <img class="rounded-3xl"
-                        src="https://img.icons8.com/external-tal-revivo-bold-tal-revivo/1200/external-github-with-cat-logo-an-online-community-for-software-development-logo-bold-tal-revivo.jpg"
-                        alt="Github" width="24px">
+                    <img class="rounded-3xl" src="./Assets//github-logo-png_seeklogo-480450.webp" alt="Github"
+                        width="32px">
                 </a></li>
 
         </ul>
@@ -56,14 +59,14 @@
             <div>
 
                 <h2 class="text-[#2563EB] text-[11px] md:text-[14px] border rounded-4xl w-fit px-2 py-0.5 my-4">
-                    Available for consulting &
-                    backend roles</h2>
+                    Open to Backend opportunities</h2>
 
                 <div class="text-[clamp(1.3rem,3vw,2.2rem)]">
                     Hi, I'm Jaspreet Singh.
                 </div>
-                <p class="text-[clamp(1.2rem,3.0vw,2rem)]">
-                    I build reliable backend services , scalable APIs with Scalable Architecture.
+                <p class="text-[clamp(1.2rem,2.8vw,1.8rem)] md:w-[60%]">
+                    I build reliable backend systems, scalable APIs, and services designed
+                    to perform under real-world workloads.
                 </p>
 
             </div>
@@ -71,27 +74,23 @@
             <div>
 
                 <p class="text-gray-400 text-[clamp(0.780rem,1.4vw,1.20rem)]">
-                    I’m a software engineer specializing in Backend Engineering. I focus on writing clear, predictable
-                    code that scales reliably under heavy real-world traffic with low latency and clean operational
-                    ergonomics.
+                    Backend-focused developer who enjoys working with APIs, databases,
+                    distributed systems, and performance-driven engineering.
                 </p>
 
             </div>
 
-            <div class="flex gap-6 mt-3">
+            <div class="grid grid-cols-3 w-fit items-center gap-6 mt-3">
 
-                <button class="px-5 py-2 bg-[#2563EB] rounded-lg cursor-pointer">Get in Touch </button>
+                <a class="px-5 py-2 bg-[#2563EB] rounded-lg cursor-pointer" href="./"> Resume </a>
 
-                <a href="https://github.com/Jaspreet-5" target="_blank">
-
-                    <button class="px-5 py-2 rounded-lg bg-[#1d1e21] flex gap-2 cursor-pointer">
-                        Github
-                        <img class="rounded-3xl"
-                            src="https://img.icons8.com/external-tal-revivo-bold-tal-revivo/1200/external-github-with-cat-logo-an-online-community-for-software-development-logo-bold-tal-revivo.jpg"
-                            alt="Github" width="22px">
-                    </button>
-
+                <a class="px-5 py-2 rounded-lg bg-[#1d1e21] flex justify-center items-center gap-2 cursor-pointer"
+                    href="https://github.com/Jaspreet-5" target="_blank">
+                    Github
+                    <img class="rounded-3xl" src="./Assets//github-logo-png_seeklogo-480450.webp" alt="Github"
+                        width="24px">
                 </a>
+
 
             </div>
 
@@ -102,6 +101,16 @@
         <div class="divisor w-full bg-gray-700 h-0.5 mt-20"></div>
 
 
+
+        <!-- Core Technologies -->
+
+
+
+        <section id="core-technologies" class="flex flex-col"></section>
+
+
+
+        <div class="divisor w-full bg-gray-700 h-0.5 mt-20"></div>
 
 
         <!-- Projects Section -->
@@ -142,7 +151,7 @@
 
             <div class="mt-6">
 
-                <a href=""
+                <a href="https://github.com/Jaspreet-5/" target="_blank"
                     class="text-[#2563EB] px-6 py-3 border-2 rounded-4xl font-bold hover:border-[#2563EB] hover:text-white hover:bg-[#2563EB]">
                     View All Projects
                 </a>
@@ -153,19 +162,7 @@
 
 
 
-        <div class="divisor w-full bg-gray-700 h-0.5 mt-20"></div>
-
-
-
-        <!-- Core Technologies -->
-
-
-
-        <section id="core-technologies" class="flex flex-col"></section>
-
-
-
-        <div class="divisor w-full bg-gray-700 h-0.5 mt-20"></div>
+        <div class="divisor w-full bg-gray-700 h-0.5 my-20"></div>
 
 
 
@@ -175,7 +172,7 @@
 
 
 
-        <section class="text-[clamp(0.900rem,1.5vw,1.25rem)] flex flex-col gap-10 mt-5">
+        <section class="text-[clamp(0.900rem,1.5vw,1.25rem)] flex flex-col gap-10">
 
             <h1 class="text-[clamp(1.5rem,4vw,2.5rem)] font-bold">About</h1>
 
@@ -202,6 +199,63 @@
 
         </section>
 
+
+        <div class="divisor w-full bg-gray-700 h-0.5 my-20"></div>
+
+
+
+        <!-- Contact Me Section -->
+
+
+
+        <section class="text-[clamp(0.900rem,1.5vw,1.25rem)] bg-gray-900 p-6 flex flex-col gap-7 rounded-2xl mb-12">
+
+            <h3 class="text-[clamp(1.2rem,2.5vw,2rem)] text-[#2563EB]">Got an IDEA or PROJECT?</h3>
+            <p>Let's Talk</p>
+            <p>Whether it's a backend system, an idea, or an interesting opportunity — feel free to reach out.</p>
+
+            <div
+                class="links grid grid-cols-2 md:self-center md:w-[clamp(35vw,40vw,45vw)] gap-7 justify-center items-center text-center">
+
+                <a class="flex justify-center items-center gap-2 px-7 py-2 rounded-xl bg-[#2222c1] bg-[linear-gradient(315deg,#2222c1 0%,#83abfc 100%)] text-white"
+                    target="_blank" href="https://www.linkedin.com/in/jaspreetsingh-backend/">LinkedIn
+
+                    <img src="./Assets/linkedin-icon-free-png.webp" alt="" width="28px">
+                </a>
+
+                <a target="_blank" class="flex gap-2 justify-center items-center px-7 py-2 rounded-xl  bg-[#36353D]"
+                    href="https://github.com/Jaspreet-5">GitHub
+
+                    <img class="rounded-full" src="./Assets//github-logo-png_seeklogo-480450.webp" alt="" width="34px">
+                </a>
+
+                <a class="flex gap-2 justify-center items-center px-7 py-2 rounded-xl bg-[linear-gradient(135deg,#EA4335,#C5221F)]"
+                    href="mailto:jaspreet2005g@gmail.com">E-mail
+
+                    <img class="rounded-full zoom-120 bg-transparent" src="./Assets/Gmail-logo.webp" alt=""
+                        width="34px">
+                </a>
+
+                <a onclick="openInstagram(event, `jaspreet.05_`)"
+                    class="flex justify-center items-center gap-2 px-7 py-2 rounded-xl bg-[linear-gradient(135deg,#833AB4,#E1306C,#F77737,#FCAF45)]"
+                    href="https://instagram.com/user/jaspreet.05_/">Instagram
+
+                    <img class="rounded-3xl" src="./Assets/Instagram-logo.webp" alt="" width="34px">
+                </a>
+
+
+            </div>
+
+        </section>
+
+
+
+        <footer class="w-full border-t border-gray-800 py-8 text-gray-500 text-sm">
+            <div class="flex flex-col md:flex-row justify-between gap-3">
+                <span>© 2026 Jaspreet Singh</span>
+                <span>Backend Developer</span>
+            </div>
+        </footer>
     </main>
 
 
