@@ -18,7 +18,7 @@
 
 
 
-    <nav class="navbar flex gap-6 h-17 bg-gray-900 justify-between items-center px-5">
+    <nav class="navbar flex gap-6 h-17 bg-gray-900 justify-between md:justify-around items-center px-5">
 
 
         <div class="flex gap-2 items-center">
@@ -31,13 +31,17 @@
             <img class="menu-bar" src="./Assets/menu-bar.svg" width="34" alt="">
         </div>
 
-        <ul class="links hidden md:flex md:justify-center md:items-center text-gray-400 gap-7 ">
+       <ul class="links hidden absolute top-17 right-0 w-[40vw] 
+           space-y-8 p-4 bg-gray-800 
+           md:static md:w-auto md:space-y-0 md:bg-transparent 
+           md:flex md:justify-center md:items-center 
+           text-[17px] text-gray-300 md:text-gray-400 md:gap-7">
 
             <li><a href="">About</a></li>
             <li><a href="">Projects</a></li>
             <li><a href="">Experience</a></li>
             <li><a href="">Contact</a></li>
-            <li><a href="https://github.com/Jaspreet-5" target="_blank">
+            <li><a class="hidden md:flex" href="https://github.com/Jaspreet-5" target="_blank">
                     <img class="rounded-3xl" src="./Assets//github-logo-png_seeklogo-480450.webp" alt="Github"
                         width="32px">
                 </a></li>
@@ -119,7 +123,7 @@
 
         <section class="flex flex-col gap-6 items-center"">
 
-            <h1 class=" my-6 text-[clamp(1.5rem,4vw,2.5rem)] font-bold">Projects</h1>
+            <h1 class=" my-6 text-[clamp(1.4rem,2vw,2.1rem)] font-bold">Projects</h1>
 
             <div id="projectsContainer" class="flex flex-col gap-10">
 
