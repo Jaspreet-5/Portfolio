@@ -7,7 +7,6 @@
     <title>Portfolio - Jaspreet Singh</title>
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
 </head>
 
 <body class="bg-[#0D1117] text-sm text-white flex flex-col justify-center">
@@ -18,29 +17,30 @@
 
 
 
-    <nav class="navbar flex gap-6 h-17 bg-gray-900 justify-between md:justify-around items-center px-5">
+    <nav
+        class="navbar fixed top-0 z-1000 w-screen flex gap-6 h-17 bg-gray-900 justify-between md:justify-around items-center px-5">
 
-
-        <div class="flex gap-2 items-center">
-            <div class="font-bold">Jaspreet</div>
-            <div>/</div>
-            <span>Backend Dev.</span>
-        </div>
+        <a href="#home">
+            <div class="flex gap-2 items-center">
+                <div class="font-bold">Jaspreet</div>
+                <div>/</div>
+                <span>Backend Dev.</span>
+            </div>
+        </a>
 
         <div onclick="toggleNavbarLinks(this)" class="md:hidden">
             <img class="menu-bar" src="./Assets/menu-bar.svg" width="34" alt="">
         </div>
 
-       <ul class="links hidden absolute top-17 right-0 w-[40vw] 
+        <ul class="links hidden absolute top-17 right-0 w-[40vw] 
            space-y-8 p-4 bg-gray-800 
            md:static md:w-auto md:space-y-0 md:bg-transparent 
            md:flex md:justify-center md:items-center 
            text-[17px] text-gray-300 md:text-gray-400 md:gap-7">
 
-            <li><a href="">About</a></li>
-            <li><a href="">Projects</a></li>
-            <li><a href="">Experience</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
             <li><a class="hidden md:flex" href="https://github.com/Jaspreet-5" target="_blank">
                     <img class="rounded-3xl" src="./Assets//github-logo-png_seeklogo-480450.webp" alt="Github"
                         width="32px">
@@ -56,9 +56,9 @@
 
 
 
-    <main class="w-[90vw] md:w-[70vw] flex flex-col justify-center self-center">
+    <main id="home" class="w-[90vw] md:w-[70vw] flex flex-col justify-center self-center">
 
-        <section class="mt-18 flex flex-col gap-6 font-bold">
+        <section class="mt-28 flex flex-col gap-6 font-bold">
 
             <div>
 
@@ -86,9 +86,10 @@
 
             <div class="grid grid-cols-3 w-fit items-center gap-6 mt-3">
 
-                <a class="px-5 py-2 bg-[#2563EB] rounded-lg cursor-pointer" href="./"> Resume </a>
+                <a class="px-5 py-2.5 bg-[#2563EB] rounded-lg cursor-pointer" href="./Assets//jaspreet-resume.pdf"
+                    target="_blank"> Resume </a>
 
-                <a class="px-5 py-2 rounded-lg bg-[#1d1e21] flex justify-center items-center gap-2 cursor-pointer"
+                <a class="px-5 py-2.5 rounded-lg bg-[#1d1e21] flex justify-center items-center gap-2 cursor-pointer"
                     href="https://github.com/Jaspreet-5" target="_blank">
                     Github
                     <img class="rounded-3xl" src="./Assets//github-logo-png_seeklogo-480450.webp" alt="Github"
@@ -110,7 +111,7 @@
 
 
 
-        <section id="core-technologies" class="flex flex-col"></section>
+        <section id="core-technologies" class="scroll-mt-20 flex flex-col"></section>
 
 
 
@@ -120,8 +121,7 @@
         <!-- Projects Section -->
 
 
-
-        <section class="flex flex-col gap-6 items-center"">
+        <section id="projects" class="scroll-mt-20 flex flex-col gap-6 items-center"">
 
             <h1 class=" my-6 text-[clamp(1.4rem,2vw,2.1rem)] font-bold">Projects</h1>
 
@@ -174,9 +174,7 @@
         <!-- About Section -->
 
 
-
-
-        <section class="text-[clamp(0.900rem,1.5vw,1.25rem)] flex flex-col gap-10">
+        <section id="about" class="scroll-mt-20 text-[clamp(0.900rem,1.5vw,1.25rem)] flex flex-col gap-10">
 
             <h1 class="text-[clamp(1.5rem,4vw,2.5rem)] font-bold">About</h1>
 
@@ -212,42 +210,49 @@
 
 
 
-        <section class="text-[clamp(0.900rem,1.5vw,1.25rem)] bg-gray-900 p-6 flex flex-col gap-7 rounded-2xl mb-12">
+        <section id="contact"
+            class="scroll-mt-20 text-[clamp(0.900rem,1.5vw,1.25rem) ">
 
-            <h3 class="text-[clamp(1.2rem,2.5vw,2rem)] text-[#2563EB]">Got an IDEA or PROJECT?</h3>
-            <p>Let's Talk</p>
-            <p>Whether it's a backend system, an idea, or an interesting opportunity — feel free to reach out.</p>
+            <h1 class="text-[clamp(1.5rem,4vw,2.5rem)]">Contact Me</h1>
 
-            <div
-                class="links grid grid-cols-2 md:self-center md:w-[clamp(35vw,40vw,45vw)] gap-7 justify-center items-center text-center">
+            <div class=" bg-gray-900 p-6 flex flex-col gap-7 rounded-2xl my-12">
 
-                <a class="flex justify-center items-center gap-2 px-7 py-2 rounded-xl bg-[#2222c1] bg-[linear-gradient(315deg,#2222c1 0%,#83abfc 100%)] text-white"
-                    target="_blank" href="https://www.linkedin.com/in/jaspreetsingh-backend/">LinkedIn
+                <h3 class="text-[clamp(1.2rem,2.5vw,2rem)] text-[#2563EB]">Got an IDEA or PROJECT?</h3>
+                <p>Let's Talk</p>
+                <p>Whether it's a backend system, an idea, or an interesting opportunity — feel free to reach out.</p>
 
-                    <img src="./Assets/linkedin-icon-free-png.webp" alt="" width="28px">
-                </a>
+                <div
+                    class="links grid grid-cols-2 md:self-center md:w-[clamp(35vw,40vw,45vw)] gap-7 justify-center items-center text-center">
 
-                <a target="_blank" class="flex gap-2 justify-center items-center px-7 py-2 rounded-xl  bg-[#36353D]"
-                    href="https://github.com/Jaspreet-5">GitHub
+                    <a class="flex justify-center items-center gap-2 px-7 py-2 rounded-xl bg-[#2222c1] bg-[linear-gradient(315deg,#2222c1 0%,#83abfc 100%)] text-white"
+                        target="_blank" href="https://www.linkedin.com/in/jaspreetsingh-backend/">LinkedIn
 
-                    <img class="rounded-full" src="./Assets//github-logo-png_seeklogo-480450.webp" alt="" width="34px">
-                </a>
+                        <img src="./Assets/linkedin-icon-free-png.webp" alt="" width="28px">
+                    </a>
 
-                <a class="flex gap-2 justify-center items-center px-7 py-2 rounded-xl bg-[linear-gradient(135deg,#EA4335,#C5221F)]"
-                    href="mailto:jaspreet2005g@gmail.com">E-mail
+                    <a target="_blank" class="flex gap-2 justify-center items-center px-7 py-2 rounded-xl  bg-[#36353D]"
+                        href="https://github.com/Jaspreet-5">GitHub
 
-                    <img class="rounded-full zoom-120 bg-transparent" src="./Assets/Gmail-logo.webp" alt=""
-                        width="34px">
-                </a>
+                        <img class="rounded-full" src="./Assets//github-logo-png_seeklogo-480450.webp" alt=""
+                            width="34px">
+                    </a>
 
-                <a onclick="openInstagram(event, `jaspreet.05_`)"
-                    class="flex justify-center items-center gap-2 px-7 py-2 rounded-xl bg-[linear-gradient(135deg,#833AB4,#E1306C,#F77737,#FCAF45)]"
-                    href="https://instagram.com/user/jaspreet.05_/">Instagram
+                    <a class="flex gap-2 justify-center items-center px-7 py-2 rounded-xl bg-[linear-gradient(135deg,#EA4335,#C5221F)]"
+                        href="mailto:jaspreet2005g@gmail.com">E-mail
 
-                    <img class="rounded-3xl" src="./Assets/Instagram-logo.webp" alt="" width="34px">
-                </a>
+                        <img class="rounded-full zoom-120 bg-transparent" src="./Assets/Gmail-logo.webp" alt=""
+                            width="34px">
+                    </a>
+
+                    <a onclick="openInstagram(event, `jaspreet.05_`)"
+                        class="flex justify-center items-center gap-2 px-7 py-2 rounded-xl bg-[linear-gradient(135deg,#833AB4,#E1306C,#F77737,#FCAF45)]"
+                        href="https://instagram.com/user/jaspreet.05_/">Instagram
+
+                        <img class="rounded-3xl" src="./Assets/Instagram-logo.webp" alt="" width="34px">
+                    </a>
 
 
+                </div>
             </div>
 
         </section>
